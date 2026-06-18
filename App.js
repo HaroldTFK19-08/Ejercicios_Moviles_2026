@@ -36,7 +36,7 @@ export default function App() {
       </Text>
       <FlatList
         data={users}
-        
+
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <Lista user={item} />
@@ -62,6 +62,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   separator: {
-    height: 5,
+    height: 10,
   },
 });
